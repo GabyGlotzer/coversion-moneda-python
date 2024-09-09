@@ -1,0 +1,46 @@
+----------------------------------
+Problemática:
+La empresa Supertech pierde plata porque en las transacciones internacionales 
+cometen errores al pasar de Euro o Dolar a mexicanos en los pagos de importaciones
+----------------------------------
+
+----------------------------------
+Algoritmo
+
+1. Definir el valor actual del Euro y Dolar respecto del peso mexicano
+2. Solicitar al usuario el tipo de conversión (Euro o Dolar a mex)
+3. Solicitar monto a convertir
+4. Realizar la conversión al tipo de acmbio vigente
+5. Mostrar el resultado
+----------------------------------
+
+----------------------------------
+Pseudocódigo:
+
+Inicio
+
+    # paso 1
+    Definir tipo_eur_a_mex = 23.70
+    Definir tipo_usd_a_mex = 20.75
+
+    # paso 2
+    Solicitar al usuario la moneda elegida (Euro o Dolar)
+    Mostrar mensaje "Ingrese la moneda origen para la conversión (EUR/USD): "
+
+    # paso 3
+    Solicitar el monto a convertir
+    Mostrar mensaje: "Ingrese monto: "
+
+    # paso 4 
+    Realizar la conversión usando el tipo de cambio correspondiente
+    # paso 5
+    Mostrar el resultado
+
+    Si tipo_conversión == "EUR"
+        Calcular resultado = monto * tipo_eur_a_mex
+        Mostrar "El reultado de la conversión de EUR a MXN es:", resultado
+    Sino Si tipo_conversión == "USD"
+        Calcular resultado = monto * tipo_usd_a_mex
+        Mostrar "El reultado de la conversión de USD a MXN es:", resultado
+    Sino
+        Mostrar: "No está disponible este tipo de conversión"
